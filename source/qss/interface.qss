@@ -1,0 +1,202 @@
+QToolBar
+{
+  background-color: rgb(255,255,255);
+}
+
+QMainWindow
+{
+  background-color: rgb(255, 255, 255);
+  border-image: url(":/resource/png/back.png");
+}
+
+QGroupBox
+{
+  font: 75 12pt "华文细黑";
+  color: rgb(12, 131, 209);
+  background-color: rgba(255,255,255,220);
+  border-radius: 5px;
+  padding:5px 5px 5px 5px;
+  border: 2px solid rgb(222,222,222);
+}
+
+QMenu
+{
+  background-color: white;
+}
+QMenu::item:enabled
+{
+  font: 75 10pt "华文细黑";
+  color: rgb(12, 131, 209);
+  background-color: white;
+}
+
+QMenu::item:enabled:selected
+{
+  font: 75 10pt "华文细黑";
+  color: white;
+  background-color: rgb(12, 131, 209);
+}
+
+QMenu::item:!enabled
+{
+  font: 75 10pt "华文细黑";
+  color: rgb(222,222,222);
+  background-color: white;
+}
+
+QMenuBar
+{
+  font: 75 12pt "华文细黑";
+  background-color: white;
+}
+
+QMenuBar::item:unselected
+{
+  font: 75 12pt "华文细黑";
+  color: rgb(12, 131, 209);
+  background-color: white;
+}
+
+QMenuBar::item:selected
+{
+  font: 75 12pt "华文细黑";
+  color: white;
+  background-color: rgb(12, 131, 209);
+}
+
+xQGraphicsView
+{
+  border: 1px solid rgb(222,222,222);
+  background-color: rgb(240, 240, 240);
+}
+
+QGraphicsView
+{
+  border: 1px solid rgb(222,222,222);
+  background-color: rgb(240, 240, 240);
+}
+
+QDoubleSpinBox
+{
+  background-color: white;
+  color: rgb(12, 131, 209);
+  font: 75 8pt "华文细黑";
+  border: 2px solid rgb(222,222,222);
+  border-radius: 5px;
+}
+
+QDoubleSpinBox:!enabled
+{
+  background-color: white;
+  color: rgb(222， 222， 222);
+  font: 75 8pt "华文细黑";
+  border: 2px solid rgb(222,222,222);
+  border-radius: 5px;
+}
+
+QSpinBox
+{
+  background-color: white;
+  color: rgb(12, 131, 209);
+  font: 75 8pt "华文细黑";
+  border: 2px solid rgb(222,222,222);
+  border-radius: 5px;
+}
+
+QSpinBox:!enabled
+{
+  background-color: white;
+  color: rgb(222, 222, 222);
+  font: 75 8pt "华文细黑";
+  border: 2px solid rgb(222,222,222);
+  border-radius: 5px;
+}
+
+QSlider::groove:horizontal
+{
+  background:rgb(222,222,222);
+  border: 2px solid rgb(222,222,222);
+  border-radius: 5px;
+}
+
+QSlider::handle:horizontal
+{
+  width: 10px;
+  height: 10px;
+}
+
+QSlider::sub-page:horizontal
+{
+  margin: 3px 3px 3px 3px;
+  background: rgb(12, 131, 209);
+  border: 2px solid rgb(12, 131, 209);
+  border-radius: 5px;
+}
+
+QSlider::add-page:horizontal
+{
+  background: rgb(222,222,222);
+  border: 2px solid rgb(222, 222, 222);
+  border-radius: 5px;
+}
+
+QSlider::groove:horizontal:!enabled
+{
+  background:rgb(240,240,240);
+  border: 2px solid rgb(240,240,240);
+  border-radius: 5px;
+}
+
+QSlider::handle:horizontal:!enabled
+{
+  width: 10px;
+  height: 10px;
+}
+
+QSlider::sub-page:horizontal:!enabled
+{
+  margin: 3px 3px 3px 3px;
+  background: rgb(222, 222, 222);
+  border: 2px solid rgb(222, 222, 222);
+  border-radius: 5px;
+}
+
+QSlider::add-page:horizontal:!enabled
+{
+  background: rgb(240,240,240);
+  border: 2px solid rgb(240, 240, 240);
+  border-radius: 5px;
+}
+
+QLabel
+{
+  font: 75 10pt "华文细黑";
+  color: rgb(12, 131, 209);
+}
+
+QPushButton
+{
+  background-color: rgb(12, 131, 209);
+  color: white;
+  font: 75 10pt "华文细黑";
+  border: 2px solid rgb(12, 131, 209);
+  border-radius: 5px;
+}
+
+QPushButton:pressed
+{
+  background-color: rgb(9, 96, 153);
+  color: white;
+  font: 75 10pt "华文细黑";
+  border: 2px solid rgb(9, 96, 153);
+  border-radius: 5px;
+}
+
+QPushButton:!enabled
+{
+  background-color: rgb(135, 203, 248);
+  color: rgb(222,222,222);
+  font: 75 10pt "华文细黑";
+  border: 2px solid rgb(135, 203, 248);
+  border-radius: 5px;
+}

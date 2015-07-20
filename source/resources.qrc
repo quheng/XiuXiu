@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resource/png/close.png</file>
+        <file>resource/png/open.png</file>
+        <file>resource/png/save.png</file>
+        <file>resource/png/save_as.png</file>
+        <file>resource/png/mainwindow_title.png</file>
+        <file>resource/png/back.png</file>
+        <file>resource/png/blank.png</file>
+        <file>qss/interface.qss</file>
+        <file>resource/png/up-arrow.png</file>
+        <file>resource/png/redo.png</file>
+        <file>resource/png/undo.png</file>
+        <file>resource/png/showoriginal.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::ActionsContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>丑图秀秀 - Xiuxiu</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normalon>:/resource/png/mainwindow_title.png</normalon>
+   </iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="xQGraphicsView" name="graphicsView">
+      <property name="minimumSize">
+       <size>
+        <width>532</width>
+        <height>503</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>1</number>
+      </property>
+      <property name="leftMargin">
+       <number>10</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>10</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>10</horstretch>
+          <verstretch>20</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="title">
+         <string>图片信息</string>
+        </property>
+        <widget class="QLabel" name="label">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>60</y>
+           <width>59</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>曝光时间</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>80</y>
+           <width>59</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>光圈大小</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_3">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>40</y>
+           <width>59</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>图片高度</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_4">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>59</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>图片宽度</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="l1_1">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>20</y>
+           <width>59</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>None</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="l1_2">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>40</y>
+           <width>59</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>None</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="l1_3">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>60</y>
+           <width>59</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>None</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="l1_4">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>80</y>
+           <width>59</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>None</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_5">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>20</y>
+           <width>59</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>测光模式</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_6">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>40</y>
+           <width>59</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>曝光模式</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_7">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>60</y>
+           <width>59</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>曝光补偿</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_8">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>80</y>
+           <width>59</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>相机信息</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="l1_5">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>20</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>None</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="l1_6">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>40</y>
+           <width>59</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>None</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="l1_7">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>60</y>
+           <width>59</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>None</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="l1_8">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>80</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>None</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>200</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>修改图像</string>
+        </property>
+        <widget class="QSlider" name="hsBright">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>20</y>
+           <width>141</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>99</number>
+         </property>
+         <property name="value">
+          <number>50</number>
+         </property>
+         <property name="sliderPosition">
+          <number>50</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="QSlider" name="hsContrast">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>50</y>
+           <width>141</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>99</number>
+         </property>
+         <property name="value">
+          <number>50</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="QSlider" name="hsSat">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>80</y>
+           <width>141</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>99</number>
+         </property>
+         <property name="value">
+          <number>50</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="QSlider" name="hsHue">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>110</y>
+           <width>141</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>99</number>
+         </property>
+         <property name="value">
+          <number>50</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="QSlider" name="hsGamma">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>140</y>
+           <width>141</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>99</number>
+         </property>
+         <property name="value">
+          <number>50</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>170</y>
+           <width>101</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>确定</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>170</y>
+           <width>101</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>复位</string>
+         </property>
+        </widget>
+        <widget class="QDoubleSpinBox" name="dsbBright">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>20</y>
+           <width>81</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="minimum">
+          <double>-0.990000000000000</double>
+         </property>
+         <property name="maximum">
+          <double>0.990000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+        <widget class="QDoubleSpinBox" name="dsbContrast">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>50</y>
+           <width>81</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="minimum">
+          <double>-0.990000000000000</double>
+         </property>
+         <property name="maximum">
+          <double>0.990000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+        <widget class="QDoubleSpinBox" name="dsbSat">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>80</y>
+           <width>81</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="minimum">
+          <double>-0.990000000000000</double>
+         </property>
+         <property name="maximum">
+          <double>0.990000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+        <widget class="QDoubleSpinBox" name="dsbHue">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>110</y>
+           <width>81</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="minimum">
+          <double>-0.990000000000000</double>
+         </property>
+         <property name="maximum">
+          <double>0.990000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+        <widget class="QDoubleSpinBox" name="dsbGamma">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>140</y>
+           <width>81</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="minimum">
+          <double>-0.990000000000000</double>
+         </property>
+         <property name="maximum">
+          <double>0.990000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_9">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>31</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>亮度</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_10">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>41</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>对比度</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_11">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>41</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>饱和度</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_12">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>110</y>
+           <width>41</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>色相</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_13">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>140</y>
+           <width>51</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Gamma</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>200</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>直方图</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QGraphicsView" name="hist">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QPushButton" name="showred">
+             <property name="text">
+              <string>Red</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="showgreen">
+             <property name="text">
+              <string>Green</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="showblue">
+             <property name="text">
+              <string>Blue</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="geometry">
+     <rect>
+      <x>347</x>
+      <y>55</y>
+      <width>154</width>
+      <height>149</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="open"/>
+    <addaction name="save"/>
+    <addaction name="save_as"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="quit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="undo"/>
+    <addaction name="redo"/>
+    <addaction name="origin"/>
+   </widget>
+   <widget class="QMenu" name="menuFilters">
+    <property name="title">
+     <string>Filters</string>
+    </property>
+    <addaction name="pencil"/>
+    <addaction name="crystal"/>
+    <addaction name="ancient"/>
+    <addaction name="gauss"/>
+    <addaction name="edge"/>
+    <addaction name="actionComics"/>
+   </widget>
+   <widget class="QMenu" name="menuMeiRong">
+    <property name="title">
+     <string>MeiRong</string>
+    </property>
+    <addaction name="facelift"/>
+    <addaction name="whiten"/>
+   </widget>
+   <widget class="QMenu" name="menuImage">
+    <property name="title">
+     <string>Image</string>
+    </property>
+    <addaction name="fanzhuan"/>
+    <addaction name="horizontalflip"/>
+    <addaction name="xuanzhuan"/>
+    <addaction name="counterclockwise"/>
+    <addaction name="gray"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuImage"/>
+   <addaction name="menuFilters"/>
+   <addaction name="menuMeiRong"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="open"/>
+   <addaction name="save"/>
+   <addaction name="save_as"/>
+   <addaction name="separator"/>
+   <addaction name="undo"/>
+   <addaction name="redo"/>
+   <addaction name="origin"/>
+  </widget>
+  <action name="open">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resource/png/open.png</normaloff>
+     <normalon>:/resource/png/open.png</normalon>:/resource/png/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="toolTip">
+    <string>Open an existing file</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="save">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resource/png/save.png</normaloff>
+     <normalon>:/resource/png/save.png</normalon>:/resource/png/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="toolTip">
+    <string>Save into the original file</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="close">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resource/png/close.png</normaloff>
+     <normalon>:/resource/png/close.png</normalon>:/resource/png/close.png</iconset>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+   <property name="toolTip">
+    <string>Close the present file</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="save_as">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resource/png/save_as.png</normaloff>:/resource/png/save_as.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save as</string>
+   </property>
+   <property name="toolTip">
+    <string>Save as another file</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="quit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="toolTip">
+    <string>Quit the program</string>
+   </property>
+  </action>
+  <action name="facelift">
+   <property name="text">
+    <string>Face Lift</string>
+   </property>
+   <property name="toolTip">
+    <string>Face Lift</string>
+   </property>
+  </action>
+  <action name="whiten">
+   <property name="text">
+    <string>Whitening</string>
+   </property>
+   <property name="toolTip">
+    <string>Whitening</string>
+   </property>
+  </action>
+  <action name="pencil">
+   <property name="text">
+    <string>Pencil</string>
+   </property>
+   <property name="toolTip">
+    <string>Pencilize</string>
+   </property>
+  </action>
+  <action name="crystal">
+   <property name="text">
+    <string>Crystal Filter</string>
+   </property>
+   <property name="toolTip">
+    <string>Crystalize</string>
+   </property>
+  </action>
+  <action name="ancient">
+   <property name="text">
+    <string>Ancient</string>
+   </property>
+   <property name="toolTip">
+    <string>Make you like Marks</string>
+   </property>
+  </action>
+  <action name="gray">
+   <property name="text">
+    <string>Gray</string>
+   </property>
+   <property name="toolTip">
+    <string>Gray</string>
+   </property>
+  </action>
+  <action name="undo">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resource/png/undo.png</normaloff>:/resource/png/undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Undo</string>
+   </property>
+   <property name="toolTip">
+    <string>Undo the last operation</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="gauss">
+   <property name="text">
+    <string>Gauss</string>
+   </property>
+   <property name="toolTip">
+    <string>Gauss</string>
+   </property>
+  </action>
+  <action name="fanzhuan">
+   <property name="text">
+    <string>Verticle Flip</string>
+   </property>
+  </action>
+  <action name="xuanzhuan">
+   <property name="text">
+    <string>Clockwise Turning</string>
+   </property>
+  </action>
+  <action name="horizontalflip">
+   <property name="text">
+    <string>Horizontal Flip</string>
+   </property>
+  </action>
+  <action name="counterclockwise">
+   <property name="text">
+    <string>Counterclockwise Turning</string>
+   </property>
+  </action>
+  <action name="origin">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resource/png/showoriginal.png</normaloff>:/resource/png/showoriginal.png</iconset>
+   </property>
+   <property name="text">
+    <string>Show Original</string>
+   </property>
+  </action>
+  <action name="edge">
+   <property name="text">
+    <string>Edge</string>
+   </property>
+  </action>
+  <action name="redo">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resource/png/redo.png</normaloff>:/resource/png/redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Redo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="ll">
+   <property name="text">
+    <string>ll</string>
+   </property>
+  </action>
+  <action name="actionComics">
+   <property name="text">
+    <string>Comics</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>xQGraphicsView</class>
+   <extends>QGraphicsView</extends>
+   <header>xqgraphicsview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
